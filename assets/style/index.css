@@ -59,12 +59,6 @@
  .about .social.portfolio .icon {
 	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
 }
- .about .social.dribbble {
-	 transition: all 0.3s ease;
-}
- .about .social.dribbble .icon {
-	 background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
-}
  .about .social.linkedin {
 	 transition: all 0.8s ease;
 }
@@ -134,17 +128,22 @@
  body {
 	 font-family: "Raleway", sans-serif;
 }
+
  .mainNav {
-	 width: 100%;
-	 height: 80px;
-	 position: absolute;
-	 z-index: 1;
-	 display: flex;
-	 justify-content: space-between;
-	 align-items: center;
-	 color: #9197ae;
-	 text-transform: uppercase;
-	 padding: 0 40px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 40px;
+    position: fixed;
+    padding-top : 35px;
+    padding-bottom : 20px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background-color: white;
  }
 
  @media screen and (max-width: 799px) {
@@ -172,7 +171,7 @@
 	 font-size: 14px;
 	 margin-left: 20px;
 	 font-weight: 600;
-	 box-shadow: inset 0px -10px 0px rgba(255, 255, 255, 0.5);
+	 box-shadow: inset 0px -10px 0px rgba(248, 250, 250, 0.5);
 	 transition: all 0.4s ease, transform 0.2s ease;
 	 padding: 2px 4px;
 	 transform: translateY(0px);
@@ -389,6 +388,7 @@ header {
 	margin: 40px 40px;
 	font-size: 20px;
 	padding: 10px 10px;
+	font-weight: bold;
 }
 
 .post img {
@@ -403,4 +403,40 @@ header {
 	margin: 40px 40px;
 	font-size: 50px;
 	padding: 10px 10px;
+}
+.mainNav {
+	position: sticky;
+	top : 0;
+	width: 100%;
+}
+#themeChanger{
+	color: white;
+	background-color: black;
+	width: 100px;
+	height: 40px;
+	left: 50%;
+}
+
+#themeChanger:hover{
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+.mainNavDark {
+	width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: silver;
+    text-transform: uppercase;
+    padding: 0 40px;
+    position: fixed;
+    padding-top : 35px;
+    padding-bottom : 20px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background-color: black;
+
 }
