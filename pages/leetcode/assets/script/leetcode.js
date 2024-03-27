@@ -1,3 +1,4 @@
-import { isDark } from "../../../../assets/script";
+document.querySelector('.button').addEventListener('click', function() {
+  window.location.href = 'solutions/leetcodeSolutions.html';
 
-console.log(isDark);
+})
